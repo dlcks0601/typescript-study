@@ -17,7 +17,7 @@ import React, { useState } from 'react';
 //     </div>
 //   );
 // };
-const Time: React.FC = () => {
+const Timer: React.FC = () => {
   const [time, setTime] = useState(new Date());
   setInterval(() => {
     setTime(new Date());
@@ -25,4 +25,4 @@ const Time: React.FC = () => {
   return <div>현재시간 : {time.toLocaleTimeString()}</div>;
 };
 
-export default Time;
+export default Timer;

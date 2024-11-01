@@ -1,16 +1,19 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import ClassCom from './ClasCom';
 import TodoList from './Todolist';
+import Clock from './Timer';
+import MyWeather from './MyWeather';
 
 function App() {
   return (
-    <div className='App'>
-      <h1 style={{ backgroundColor: 'white' }}>Hello React</h1>
-      <TodoList />
+    <div className='container'>
+      <TodoList></TodoList>
+      {/* <Clock></Clock> */}
+      <MyWeather weather='맑음'>일기예보</MyWeather>
     </div>
   );
 }
 
+//
 export default App;
